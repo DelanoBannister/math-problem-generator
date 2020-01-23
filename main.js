@@ -25,9 +25,9 @@ function main() {
         for (i = 0; i < problems.length; i++) {
             formatter(sys.stdout, i + 1, problem);
         }
-            if _name_ == "main"(
+            if (name == "main"){
                 main()
-            )
+            }
          }
 
 }
