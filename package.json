@@ -18,5 +18,3 @@
   "homepage": "https://github.com/jalawelo/math-problem-generator#readme",
   "dependencies": {
     "node-while-loop": "^1.0.4"
-  }
-}
