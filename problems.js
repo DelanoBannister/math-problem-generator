@@ -69,7 +69,6 @@ function randomEquation(maxTerms) {
                     break;
                 }
         });
-        
 }
 
 function generateEquation(maxTerms) {
