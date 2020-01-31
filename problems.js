@@ -61,13 +61,14 @@ function randomEquation(maxTerms) {
     The answer on the right - hand side will always be in the range[0, 1000].
     Parameters - max_terms: how many terms to generate on the left - hand - side of the equation. */
 
-    loop.while {
-        const eq = generateEquation(maxTerms);
-        if (eq.answer == parseInt(eq.answer) && eq.answer >= 0 && eq.answer <= 1000) {
-            break;
+    loop.while(function() {
             return eq;
-        }
-    }
+        }, function() {
+            const eq = generateEquation(maxTerms);
+                if (eq.answer == parseInt(eq.answer) && eq.answer >= 0 && eq.answer <= 1000) {
+                    break;
+                }
+        });
 }
 
 function generateEquation(maxTerms) {
